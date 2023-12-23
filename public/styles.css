@@ -1,4 +1,41 @@
-body{
+
+
+.center {
+  
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    text-align: center;
+    
+    
+}
+
+ul {
+    border: 3px solid #73AD21;
+    margin: auto;
+  
+    width: 5%;
+    min-height: 100px;
+    
+}
+
+li {
+    float: right;
+    cursor: pointer;
+    text-align: right;
+    display: block;
+    border: 3px solid #73AD21;
+    width: max-content;
+    
+    
+}
+
+li.hover {
+    background-color : black;
+}
+
+.animatedWelcome{
     margin: 0;
     padding: 0;
     background-color: #2f3542;
@@ -8,4 +45,12 @@ body{
     align-items: center;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
+}
+  
+#introAnimation {
+    content: "hwwww";
+    width: 60px;
+    height: 20px;
+    text-decoration-color: rebeccapurple;
+    position: relative;
 }
