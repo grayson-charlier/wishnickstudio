@@ -8,7 +8,11 @@
     font-weight: regular;
     src: url('/fonts/DPSDbeyond.otf');
     
-  }
+}
+body {
+    margin:0;
+    padding: 0;
+}
 
 #welcomeContainer {
     margin: 0;
@@ -19,8 +23,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: large;
+    font-size: 3em;
     font-family: 'DPSDbeyond';
+    
     
 }
 
@@ -40,11 +45,9 @@
 ul {
     border: 3px solid #73AD21;
     margin: auto;
-  
     width: 5%;
     min-height: 100px;
     font-family: 'DPSDbeyond';
-    
 }
 
 li {
@@ -54,17 +57,13 @@ li {
     display: block;
     border: 3px solid #73AD21;
     width: max-content;
-    font-family: 'DPSDbeyond';
-    
-    
+    font-family: 'DPSDbeyond';   
 }
 
 li.hover {
     background-color : black;
 }
 
-
-  
 #introAnimation {
     text-decoration-color: rgb(105, 53, 157);
     position: relative;
