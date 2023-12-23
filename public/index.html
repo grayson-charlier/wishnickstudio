@@ -9,7 +9,7 @@
 
     </head>
     <body onload="setRandColors">
-        <div>
+        <div id="welcomeContainer">
             <p id="welcomeText"></p>
             <div id="introAnimation"></div>
             <script>
@@ -30,6 +30,7 @@
                             setTimeout(displayText, 2000);
                             setTimeout(displayEll, 2500);
                             setTimeout(clearText, 3000);
+
                             // then go to home page
                         }
                         else{
@@ -46,12 +47,13 @@
                 function displayEll(){
                     document.getElementById("welcomeText").innerHTML = t + ell;
                 }
+                function clearText(){
+                    document.getElementById("welcomeContainer").style.visibility = 'hidden';
+                }
                 window.onload = function(){
                     typeWrite();
                 }
-                function clearText(){
-                    document.getElementById("welcomeText").innerHTML = "";
-                }
+                
         
             </script>
         </div>
