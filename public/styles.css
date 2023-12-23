@@ -1,12 +1,12 @@
 @font-face{
     font-family: 'DPSDbeyond';
-    src: url('/fonts/DPSDbeyond.otf');
+    src: url('/fonts/DPSDbeyond.woff');
     
 }
 @font-face{
     font-family: 'DPSDbeyond';
     font-weight: regular;
-    src: url('/fonts/DPSDbeyond.otf');
+    src: url('/fonts/DPSDbeyond.woff');
     
 }
 body {
