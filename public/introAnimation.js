@@ -39,7 +39,9 @@ function clearText(){
 }
 function displayPage(){
     document.getElementById("welcomeContainer").style.height = '0vh';
-    //document.getElementById("homeContainer").style.visibility = 'visible';
+
+    
+    document.getElementById("welcomeText").style.visibility = 'hidden';
     
 }
 window.onload = function(){
