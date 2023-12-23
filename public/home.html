@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Typing Animation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+        #introAnimation {
+            content: "hwwww";
+            width: 60px;
+            height: 20px;
+            text-decoration-color: rebeccapurple;
+            position: relative;
+        }
+    </style>
+    <p id="welcomeText"></p>
+    
+    <!--<div class="animated-text">
+        <span></span>
+    </div>-->
+    <div id="introAnimation"></div>
+    <script>
+        var i = 0;
+        var txt = 'welcome to wishnick studios';
+        const t = txt;
+        var speed = 50;
+        
+        function typeWrite(){
+            if (i< txt.length){
+                
+                document.getElementById("welcomeText").innerHTML += txt.charAt(i);
+                i++;
+                if (i == txt.length){
+                    setTimeout(displayEll, 500);
+                    setTimeout(displayText, 1000);
+                    setTimeout(displayEll, 1500);
+                    setTimeout(displayText, 2000);
+                    setTimeout(displayEll, 2500);
+                    // then go to home page
+                }
+                else{
+                    setTimeout(typeWrite, speed);
+                }
+            }
+        }
+        var ell = '_';
+        var blinkTimes = 2;
+        var x = 0;
+        function displayText(){
+            document.getElementById("welcomeText").innerHTML = t;
+        }
+        function displayEll(){
+            document.getElementById("welcomeText").innerHTML = t + ell;
+        }
+        window.onload = function(){
+            typeWrite();
+        }
+
+    </script>
+</body>
+</html>
