@@ -21,21 +21,17 @@
         }
     </style>
     <p id="welcomeText"></p>
-    
-    <!--<div class="animated-text">
-        <span></span>
-    </div>-->
     <div id="introAnimation"></div>
     <script>
         var i = 0;
         var txt = 'welcome to wishnick studios';
         const t = txt;
         var speed = 50;
-        
+        var teext="";
         function typeWrite(){
             if (i< txt.length){
-                
-                document.getElementById("welcomeText").innerHTML += txt.charAt(i);
+                teext += txt.charAt(i);
+                document.getElementById("welcomeText").innerHTML = teext + '_';
                 i++;
                 if (i == txt.length){
                     setTimeout(displayEll, 500);
