@@ -50,5 +50,6 @@ window.onload = function(){
     
     typeWrite();
 }
-        
+module.exports = {
     
+} 
